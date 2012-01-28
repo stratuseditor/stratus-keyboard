@@ -1,0 +1,38 @@
+{ "name":        "stratus-keyboard"
+, "version":     "0.0.1"
+, "description": "scoped key bindings for browserify"
+, "keywords":    ["stratus", "editor", "key", "keybindings", "browserify"]
+, "homepage":    "https://github.com/stratuseditor/stratus-keyboard"
+, "bugs":
+  { "url":  "https://github.com/stratuseditor/stratus-keyboard/issues"
+  }
+, "author":
+  { "name": "sentientwaffle"
+  , "url":  "http://sentientwaffle.github.com/"
+  }
+
+, "main": "./index"
+, "scripts":
+  { "prepublish":  "coffee -c index.coffee"
+  , "postpublish": "rm ./index.js"
+  , "test":        "mocha"
+  }
+
+
+, "repository":
+  { "type": "git"
+  , "url":  "https://github.com/stratuseditor/stratus-keyboard.git"
+  }
+
+, "dependencies":
+  { "underscore": "1.2.x"
+  }
+
+, "devDependencies":
+  { "should":        "0.4.x"
+  , "mocha":         "0.x.x"
+  , "coffee-script": "1.x.x"
+  }
+
+, "engines": { "node": ">=0.4.1" }
+}
