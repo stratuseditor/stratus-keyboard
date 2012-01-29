@@ -123,7 +123,6 @@ Keyboard.trigger = (key) ->
 Keyboard.focus = ($input, scope) ->
   $input.on
     focus: =>
-      #@prevScope = @scope()
       _.defer => @scope scope
       return
     # This screws up when blur is called after the new input's focus...

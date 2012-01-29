@@ -4,7 +4,7 @@ keybindings, used by [Stratus Editor](http://stratuseditor.com/).
 
 # Usage
 
-    keyboard = require "stratus-keyboard"
+    keyboard  = require "stratus-keyboard"
     
     # Configure the scope.
     keyboard "your-scope",
