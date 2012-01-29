@@ -1,4 +1,7 @@
 # Stratus:Keyboard
+
+[![Build Status](https://secure.travis-ci.org/stratuseditor/stratus-keyboard.png)](http://travis-ci.org/stratuseditor/stratus-keyboard)
+
 [Browserify](https://github.com/substack/node-browserify) module for scoped
 keybindings, used by [Stratus Editor](http://stratuseditor.com/).
 
