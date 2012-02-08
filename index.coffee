@@ -11,6 +11,9 @@
 ###
 _ = require 'underscore'
 
+if window.stratusKeyboard
+  module.exports = window.stratusKeyboard
+  return
 
 # Create or update a key binding scope.
 # 
@@ -26,7 +29,7 @@ _ = require 'underscore'
 #     "Alt-Control-Shift-d": -> alert "That was an alt-control-shift 'D'"
 # 
 # No return.
-module.exports = Keyboard = (scope, map) ->
+module.exports = window.stratusKeyboard = Keyboard = (scope, map) ->
   isFunction = _.isFunction map
   # Update.
   if Keyboard.map[scope]
