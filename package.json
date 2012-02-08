@@ -1,5 +1,5 @@
 { "name":        "stratus-keyboard"
-, "version":     "0.0.1"
+, "version":     "0.0.2"
 , "description": "scoped key bindings for browserify"
 , "keywords":    ["stratus", "editor", "key", "keybindings", "browserify"]
 , "homepage":    "https://github.com/stratuseditor/stratus-keyboard"
