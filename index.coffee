@@ -14,8 +14,9 @@ _ = require 'underscore'
 _window = {}
 if typeof(window) != "undefined" && window.stratusKeyboard
   module.exports = window.stratusKeyboard
-  _window = window
   return
+else
+  _window = window
 
 # Create or update a key binding scope.
 # 
