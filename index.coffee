@@ -15,7 +15,7 @@ _window = {}
 if typeof(window) != "undefined" && window.stratusKeyboard
   module.exports = window.stratusKeyboard
   return
-else
+else if typeof(window) != "undefined"
   _window = window
 
 # Create or update a key binding scope.
